@@ -25,14 +25,12 @@ public class Main {
 
         JLabel LabelMain = new JLabel("Anti Ryd Device");
         panel.add(LabelMain);
-
+        
         JTextArea pasteCodeHereTextField = new JTextArea(
-                "public class DynamicCode { " +
-                        "public static void main(String[] args) { " +
-                        "//Replace Me! " +
-                        "} " +
-                        "}");
-        pasteCodeHereTextField.setFont(new Font("Arial", Font.PLAIN, 10));
+                    "public class DynamicCode {\n public static void main(String[] args) {\n //Replace Me!\n }\n }"
+        );
+
+        pasteCodeHereTextField.setFont(new Font("Arial", Font.PLAIN, 15));
         pasteCodeHereTextField.setLineWrap(true);
         pasteCodeHereTextField.setWrapStyleWord(true);
         pasteCodeHereTextField.setSize(200, 200);
@@ -48,7 +46,7 @@ public class Main {
         panel.setLayout(null);
         LabelMain.setBounds(200, 50, 100, 25);
         pasteCodeHereTextField.setBounds(100, 100, 300, 200);
-        runCode.setBounds(200, 350, 100, 25);
+        runCode.setBounds(200, 325, 100, 25);
         result.setBounds(200, 400, 300, 25);
 
         runCode.addActionListener(e -> {
@@ -76,8 +74,10 @@ public class Main {
                 if (result1 == 0) {
                     System.out.println("Compilation is successful");
                     compileAndRun("DynamicCode");
-//                    result.setText("the outcome of the code is: " + result2);
-//                    System.out.println("the outcome of the code is: " + result2);
+
+                    String output = compileAndRun("DynamicCode");
+                    result.setText("The Code Output is: " + output);
+//                    result.setText("output of the code: " + );
 
                     // Load the compiled class
                     Class<?> cls = Class.forName("DynamicCode");
@@ -95,7 +95,7 @@ public class Main {
         });
     }
 
-    public static void compileAndRun(String className) {
+    public static String compileAndRun(String className) {
         // Compile the class
         ProcessBuilder pb = new ProcessBuilder("javac", className + ".java");
         try {
@@ -129,9 +129,12 @@ public class Main {
 
             JLabel result = new JLabel();
             result.setText(output);
+            return output;
+
         } catch (IOException | InterruptedException e) {
             System.out.println("Error running class " + className);
             e.printStackTrace();
         }
+        return "";
     }
 }
