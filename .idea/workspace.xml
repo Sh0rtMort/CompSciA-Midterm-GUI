@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Anti-Ryd-Gui:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252f111f-9996-4f18-acdc-724b9e279e68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Anti_Ryd_Gui_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,11 +45,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/morto/Downloads/bsh-2.0b4.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/morto/IdeaProjects/Anti-Ryd-Gui/out/artifacts/Anti_Ryd_Gui_jar/Anti-Ryd-Gui.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -57,7 +67,11 @@
       <updated>1675781578533</updated>
       <workItem from="1675781579740" duration="1745000" />
       <workItem from="1675785561997" duration="3499000" />
-      <workItem from="1675810137668" duration="8434000" />
+      <workItem from="1675810137668" duration="9031000" />
+      <workItem from="1675872489139" duration="8649000" />
+      <workItem from="1675956273199" duration="29000" />
+      <workItem from="1675956321737" duration="610000" />
+      <workItem from="1675957352827" duration="2868000" />
     </task>
     <servers />
   </component>

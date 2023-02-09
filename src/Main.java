@@ -27,7 +27,7 @@ public class Main {
         panel.add(LabelMain);
         
         JTextArea pasteCodeHereTextField = new JTextArea(
-                    "public class DynamicCode {\n public static void main(String[] args) {\n //Replace Me!\n }\n }"
+                    "public class DynamicCode {\n public static void main(String[] args) {\n //Replace Me!"
         );
 
         pasteCodeHereTextField.setFont(new Font("Arial", Font.PLAIN, 15));
@@ -42,18 +42,46 @@ public class Main {
         JLabel result = new JLabel();
         panel.add(result);
 
+        JButton addSout = new JButton("Add S.out");
+        panel.add(addSout);
+
+        JButton addFor = new JButton("Add For");
+        panel.add(addFor);
+
         //move all the components to the middle of the screen
         panel.setLayout(null);
-        LabelMain.setBounds(200, 50, 100, 25);
+        LabelMain.setBounds(200, 50, 200, 50);
         pasteCodeHereTextField.setBounds(100, 100, 300, 200);
         runCode.setBounds(200, 325, 100, 25);
-        result.setBounds(200, 400, 300, 25);
+        result.setBounds(150, 400, 300, 25);
+        addSout.setBounds(150, 375, 100, 25);
+        addFor.setBounds(250, 375, 100, 25);
+
+        LabelMain.setBackground(Color.BLACK);
+        panel.setBackground(Color.decode("#7C90A0"));
+        pasteCodeHereTextField.setBackground(Color.decode("#FAF3DD"));
+//        pasteCodeHereTextField.setBackground(Color.decode("#F2E9E1"));
+        runCode.setBackground(Color.decode("#F2E9E1"));
+        result.setBackground(Color.decode("#F2E9E1"));
+
+
+        addSout.addActionListener(e -> {
+            String code = pasteCodeHereTextField.getText();
+            pasteCodeHereTextField.setText(code + "\n System.out.println(\"Hello World\"); \n }\n }");
+        });
+
+        addFor.addActionListener(e -> {
+            String code = pasteCodeHereTextField.getText();
+            pasteCodeHereTextField.setText(code + "\n for(int i = 0; i < 10; i++){\n System.out.print(i);\n } \n }\n }");
+        });
 
         runCode.addActionListener(e -> {
 
             String code = pasteCodeHereTextField.getText();
-            try {
+//            pasteCodeHereTextField.setText(code + "\n }\n }");
 
+            try {
+                Thread.sleep(1000);
                 // Write the code to a file
                 File file = new File("DynamicCode.java");
                 FileWriter writer = new FileWriter(file, true);
@@ -68,7 +96,6 @@ public class Main {
                     writer.close();
                 }
 
-                // Compile the code
                 JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
                 int result1 = compiler.run(null, null, null, file.getPath());
                 if (result1 == 0) {
