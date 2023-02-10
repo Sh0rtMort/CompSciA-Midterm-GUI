@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252f111f-9996-4f18-acdc-724b9e279e68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Anti_Ryd_Gui_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Anti_Ryd_Gui_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anti-Ryd-Gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CompSciA-Midterm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -73,6 +76,7 @@
       <workItem from="1675956273199" duration="29000" />
       <workItem from="1675956321737" duration="610000" />
       <workItem from="1675957352827" duration="4283000" />
+      <workItem from="1676042608841" duration="699000" />
     </task>
     <servers />
   </component>

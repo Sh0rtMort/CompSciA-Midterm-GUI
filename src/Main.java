@@ -56,7 +56,7 @@ public class Main {
         LabelMain.setBounds(200, 50, 200, 50);
         pasteCodeHereTextField.setBounds(100, 100, 300, 200);
         runCode.setBounds(200, 325, 100, 25);
-        result.setBounds(150, 400, 300, 25);
+        result.setBounds(150, 410, 300, 25);
         addSout.setBounds(150, 355, 100, 25);
         addFor.setBounds(250, 355, 100, 25);
         addClose.setBounds(200, 385, 100, 25);
