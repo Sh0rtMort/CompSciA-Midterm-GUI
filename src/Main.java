@@ -48,14 +48,18 @@ public class Main {
         JButton addFor = new JButton("Add For");
         panel.add(addFor);
 
+        JButton addClose = new JButton("Add Brackets");
+        panel.add(addClose);
+
         //move all the components to the middle of the screen
         panel.setLayout(null);
         LabelMain.setBounds(200, 50, 200, 50);
         pasteCodeHereTextField.setBounds(100, 100, 300, 200);
         runCode.setBounds(200, 325, 100, 25);
         result.setBounds(150, 400, 300, 25);
-        addSout.setBounds(150, 375, 100, 25);
-        addFor.setBounds(250, 375, 100, 25);
+        addSout.setBounds(150, 355, 100, 25);
+        addFor.setBounds(250, 355, 100, 25);
+        addClose.setBounds(200, 385, 100, 25);
 
         LabelMain.setBackground(Color.BLACK);
         panel.setBackground(Color.decode("#7C90A0"));
@@ -67,12 +71,17 @@ public class Main {
 
         addSout.addActionListener(e -> {
             String code = pasteCodeHereTextField.getText();
-            pasteCodeHereTextField.setText(code + "\n System.out.println(\"Hello World\"); \n }\n }");
+            pasteCodeHereTextField.setText(code + "\nSystem.out.print(\"Hello World\");");
         });
 
         addFor.addActionListener(e -> {
             String code = pasteCodeHereTextField.getText();
-            pasteCodeHereTextField.setText(code + "\n for(int i = 0; i < 10; i++){\n System.out.print(i);\n } \n }\n }");
+            pasteCodeHereTextField.setText(code + "\nfor(int i = 0; i < 10; i++){\n System.out.print(i);\n }");
+        });
+
+        addClose.addActionListener(e -> {
+            String code = pasteCodeHereTextField.getText();
+            pasteCodeHereTextField.setText(code + "\n }\n }");
         });
 
         runCode.addActionListener(e -> {

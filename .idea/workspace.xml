@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252f111f-9996-4f18-acdc-724b9e279e68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Anti_Ryd_Gui_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +27,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +72,7 @@
       <workItem from="1675872489139" duration="8649000" />
       <workItem from="1675956273199" duration="29000" />
       <workItem from="1675956321737" duration="610000" />
-      <workItem from="1675957352827" duration="2868000" />
+      <workItem from="1675957352827" duration="4283000" />
     </task>
     <servers />
   </component>
