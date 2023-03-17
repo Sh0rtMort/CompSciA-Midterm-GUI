@@ -15,7 +15,7 @@ public class Main {
     private JPanel panel;
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Anti Ryd Device");
+        JFrame frame = new JFrame("CompSci A Midterm Project");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -27,7 +27,7 @@ public class Main {
         panel.add(LabelMain);
         
         JTextArea pasteCodeHereTextField = new JTextArea(
-                    "public class DynamicCode {\n public static void main(String[] args) {\n //Replace Me!"
+                "public class DynamicCode {\n public static void main(String[] args) {\n //Replace Me!"
         );
 
         pasteCodeHereTextField.setFont(new Font("Arial", Font.PLAIN, 15));
@@ -39,9 +39,6 @@ public class Main {
         JButton runCode = new JButton("Run Code");
         panel.add(runCode);
 
-        JLabel result = new JLabel();
-        panel.add(result);
-
         JButton addSout = new JButton("Add S.out");
         panel.add(addSout);
 
@@ -49,17 +46,40 @@ public class Main {
         panel.add(addFor);
 
         JButton addClose = new JButton("Add Brackets");
-        panel.add(addClose);
+//        panel.add(addClose);
+
+        JButton refresh = new JButton("Refresh");
+        panel.add(refresh);
+        refresh.setVisible(false);
+
+        JPanel resultPanel = new JPanel();
+        panel.add(resultPanel);
+        resultPanel.setVisible(false);
+
+        JLabel result = new JLabel();
+        resultPanel.add(result);
+
 
         //move all the components to the middle of the screen
         panel.setLayout(null);
         LabelMain.setBounds(200, 50, 200, 50);
         pasteCodeHereTextField.setBounds(100, 100, 300, 200);
-        runCode.setBounds(200, 325, 100, 25);
-        result.setBounds(150, 410, 300, 25);
-        addSout.setBounds(150, 355, 100, 25);
-        addFor.setBounds(250, 355, 100, 25);
-        addClose.setBounds(200, 385, 100, 25);
+        runCode.setBounds(200, 355, 100, 25);
+        result.setBounds(100, 325, 300, 25);
+        resultPanel.setBounds(100, 325, 300, 25);
+        addSout.setBounds(150, 325, 100, 25);
+        addFor.setBounds(250, 325, 100, 25);
+        refresh.setBounds(200, 300, 100, 25);
+
+//        addClose.setBounds(200, 355, 100, 25);
+
+
+//        Origin Points
+//        runCode.setBounds(200, 325, 100, 25);
+//        result.setBounds(150, 410, 300, 25);
+//        addSout.setBounds(150, 355, 100, 25);
+//        addFor.setBounds(250, 355, 100, 25);
+//        addClose.setBounds(200, 385, 100, 25);
 
         LabelMain.setBackground(Color.BLACK);
         panel.setBackground(Color.decode("#7C90A0"));
@@ -67,6 +87,7 @@ public class Main {
 //        pasteCodeHereTextField.setBackground(Color.decode("#F2E9E1"));
         runCode.setBackground(Color.decode("#F2E9E1"));
         result.setBackground(Color.decode("#F2E9E1"));
+        resultPanel.setBackground(Color.decode("#F2E9E1"));
 
 
         addSout.addActionListener(e -> {
@@ -84,9 +105,36 @@ public class Main {
             pasteCodeHereTextField.setText(code + "\n }\n }");
         });
 
+        refresh.addActionListener(e -> {
+            String code = pasteCodeHereTextField.getText();
+            pasteCodeHereTextField.setText(
+                    "public class DynamicCode {\n public static void main(String[] args) {\n //Replace Me!"
+            );
+
+            runCode.setVisible(true);
+            addSout.setVisible(true);
+            addFor.setVisible(true);
+
+            refresh.setVisible(false);
+            result.setVisible(false);
+            resultPanel.setVisible(false);
+
+        });
+
         runCode.addActionListener(e -> {
 
+            pasteCodeHereTextField.setText(pasteCodeHereTextField.getText() + "\n }\n }");
             String code = pasteCodeHereTextField.getText();
+
+            runCode.setVisible(false);
+            addSout.setVisible(false);
+            addFor.setVisible(false);
+
+            refresh.setVisible(true);
+            result.setVisible(true);
+            resultPanel.setVisible(true);
+
+
 //            pasteCodeHereTextField.setText(code + "\n }\n }");
 
             try {
@@ -122,6 +170,7 @@ public class Main {
                     // Invoke the main method
                     String[] mainArgs = new String[]{};
                     mainMethod.invoke(null, (Object) mainArgs);
+
                 } else {
                     System.out.println("Compilation Failed");
                 }
