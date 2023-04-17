@@ -10,10 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252f111f-9996-4f18-acdc-724b9e279e68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CompSciA_Midterm_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-path.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Anti_Ryd_Gui_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DynamicCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicCode.java" afterDir="false" />
@@ -50,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/morto/IdeaProjects/Demo-Website-main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/morto/IdeaProjects/RecursionTeach&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -63,8 +59,22 @@
   }
 }</component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base" />
+      <module name="CompSciA-Midterm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CompSciA-Midterm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ryd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ryd" />
       <module name="CompSciA-Midterm" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,6 +86,12 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Base" />
+        <item itemvalue="Application.ryd" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +120,16 @@
       <workItem from="1677183455933" duration="507000" />
       <workItem from="1677255020876" duration="118000" />
       <workItem from="1678894646813" duration="1526000" />
-      <workItem from="1679013646810" duration="5158000" />
+      <workItem from="1679013646810" duration="7249000" />
+      <workItem from="1679067946434" duration="375000" />
+      <workItem from="1679324365001" duration="84000" />
+      <workItem from="1679325027854" duration="622000" />
+      <workItem from="1679670895545" duration="891000" />
+      <workItem from="1681313363787" duration="1354000" />
+      <workItem from="1681320750741" duration="9000" />
+      <workItem from="1681433979729" duration="615000" />
+      <workItem from="1681484627961" duration="166000" />
+      <workItem from="1681743930143" duration="204000" />
     </task>
     <servers />
   </component>

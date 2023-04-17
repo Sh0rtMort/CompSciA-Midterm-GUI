@@ -23,7 +23,7 @@ public class Main {
         JPanel panel = new JPanel();
         frame.add(panel);
 
-        JLabel LabelMain = new JLabel("Anti Ryd Device");
+        JLabel LabelMain = new JLabel("CompSci Midterm Compiler");
         panel.add(LabelMain);
         
         JTextArea pasteCodeHereTextField = new JTextArea(
